@@ -91,15 +91,8 @@ public class ResultActivity extends AppCompatActivity {
         fileUri = getIntent().getParcelableExtra(FILE_URI);
         detector = new TextRecognizer.Builder(getApplicationContext()).build();
         //previewCapturedImage();
-        scanSecondHalfForAmount();
         scanTopHalfForDate();
-//        Bitmap bmp =  previewCapturedImage();
-//        if(bmp != null){
-//            Log.d(Constants.TAG, "onCreate: BITMAP NOT NULL");
-//            createSections(bmp);
-//        }else {
-//            Toast.makeText(this, "IMAGE IS NULL", Toast.LENGTH_SHORT).show();
-//        }
+        scanSecondHalfForAmount();
     }
 
     @Override
